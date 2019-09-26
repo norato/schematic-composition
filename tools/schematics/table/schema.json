@@ -10,7 +10,11 @@
         "$source": "argv",
         "index": 0
       }
+    },
+    "project": {
+      "type": "string",
+      "description": "Library name"
     }
   },
-  "required": ["name"]
+  "required": ["name", "project"]
 }
