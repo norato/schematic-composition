@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "crud",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Library name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "project": {
+      "type": "string",
+      "description": "Library name"
+    }
+  },
+  "required": ["name", "project"]
+}

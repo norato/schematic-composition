@@ -5,7 +5,7 @@ export default function(schema: Schema): Rule {
   return chain([
     externalSchematic('@angular/material', 'table', {
       project: schema.project,
-      name: schema.name
+      name: [schema.name, 'table'].join('-')
     })
   ]);
 }
